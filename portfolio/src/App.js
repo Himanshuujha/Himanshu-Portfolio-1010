@@ -153,7 +153,7 @@ const About = () => {
                   Experienced in developing software for data processing, real-time systems, and modern web platforms, 
                   delivering innovative engineering solutions through code.
                 </p>
-                <div className="flex items-center gap-4 text-slate-400">
+                {/* <div className="flex items-center gap-4 text-slate-400">
                   <div className="flex items-center gap-2">
                     <MapPin size={18} className="text-cyan-400" />
                     <span>Ludhiana, India</span>
@@ -162,7 +162,7 @@ const About = () => {
                     <Award size={18} className="text-yellow-400" />
                     <span>GPA: 7.61/10</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
