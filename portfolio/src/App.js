@@ -125,7 +125,7 @@ const Hero = () => {
           <a href="https://github.com/Himanshuujha" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
             <Github size={28} />
           </a>
-          <a href="https://www.linkedin.com/in/himanshu-jha-34a230249/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors">
+          <a href="www.linkedin.com/in/himanshu-kumar-jha-34a230249" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors">
             <Linkedin size={28} />
           </a>
           <a href="mailto:himanshujha5288@gmail.com" className="hover:text-red-400 transition-colors">
