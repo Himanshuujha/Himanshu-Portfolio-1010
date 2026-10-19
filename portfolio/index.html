@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Jha — Full-Stack Engineer</title>
+  <meta name="description"
+    content="Himanshu Jha — Full-Stack Engineer specializing in AI/RAG systems, real-time distributed platforms, and embedded IoT.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Himanshu Jha — Full-Stack Engineer">
+  <meta property="og:description"
+    content="Full-stack engineer specializing in AI/RAG systems, real-time distributed platforms, and embedded IoT.">
+  <meta property="og:image" content="images/8f2c6a16-aeb8-4273-a036-90c2df8b6567.jpg">
+  <meta property="og:site_name" content="Himanshu Jha — Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Himanshu Jha — Full-Stack Engineer">
+  <meta name="twitter:description"
+    content="Full-stack engineer specializing in AI/RAG systems, real-time distributed platforms, and embedded IoT.">
+  <meta name="twitter:image" content="images/8f2c6a16-aeb8-4273-a036-90c2df8b6567.jpg">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Modern Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <style id="page-theme">
+    :root {
+      --bg: #0b0e14;
+      --surface: #131720;
+      --text: #e8eaf0;
+      --fg: #8b90a0;
+      --accent: #4f8ef7;
+      --muted: #3a3f52;
+      --link: #7ab3ff;
+      --link-hover: #b8d4ff;
+      --text-on-surface-strong: #e8eaf0;
+      --link-on-strong: #7ab3ff;
+      --link-hover-on-strong: #b8d4ff;
+      --primary: #4f8ef7;
+      --border: #1e2436;
+      --text-on-accent: #ffffff;
+      --text-display-accent: #4f8ef7;
+      --surface-strong: #090c11;
+      --hero-glow: #4f8ef7;
+      --chart-1: #4f8ef7;
+      --chart-2: #7c3aed;
+    }
+  </style>
+
+  <style>
+    :root {
+      --text-xs: 0.75rem;
+      --text-sm: 0.8125rem;
+      --text-base: 1rem;
+      --text-lg: 1.125rem;
+      --text-xl: 1.25rem;
+      --text-2xl: 1.5rem;
+      --text-3xl: 1.875rem;
+      --text-4xl: 2.25rem;
+      --text-display: 3.5rem;
+      --duration-fast: 150ms;
+      --duration-base: 250ms;
+      --duration-slow: 400ms;
+      --duration-xslow: 600ms;
+      --nav-height: 64px;
+      --font-display: 'Plus Jakarta Sans', acumin-pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Inter', proxima-nova, helvetica-neue, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--nav-height) + 1.5rem);
+    }
+
+    section,
+    header {
+      scroll-margin-top: calc(var(--nav-height) + 1.5rem);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-display);
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: var(--text-display);
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: var(--text-4xl);
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: var(--text-2xl);
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: var(--text-xl);
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.65;
+    }
+
+    p+p {
+      margin-top: 2em;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+      transition: color var(--duration-fast) ease;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 4rem);
+    }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+
+
+  <style>
+    nav[data-name="Primary nav"] {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--nav-height);
+      background-color: color-mix(in srgb, var(--bg) 85%, transparent);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1280px;
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 4rem);
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-logo span {
+      color: var(--accent);
+    }
+
+    .nav-desktop {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-desktop a {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--fg);
+      text-decoration: none;
+      transition: color var(--duration-fast) ease;
+      padding: 0.5rem 0;
+      min-height: 24px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .nav-desktop a:hover {
+      color: var(--text);
+    }
+
+    .nav-cta {
+      background-color: var(--primary);
+      color: var(--text-on-accent) !important;
+      padding: 0.5rem 1.25rem !important;
+      border-radius: 6px;
+      transition: opacity var(--duration-fast) ease, transform var(--duration-fast) ease !important;
+    }
+
+    .nav-cta:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+
+    .nav-cta:active {
+      transform: scale(0.97);
+    }
+
+    .nav-mobile {
+      display: none;
+      list-style: none;
+    }
+
+    details.nav-mobile summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      min-width: 44px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      border-radius: 6px;
+      transition: background-color var(--duration-fast) ease;
+    }
+
+    details.nav-mobile summary:hover {
+      background-color: var(--surface);
+    }
+
+    details.nav-mobile summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.nav-mobile .nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-height);
+      left: 0;
+      right: 0;
+      background-color: var(--surface-strong);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem clamp(1.25rem, 5vw, 4rem);
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    details.nav-mobile[open] .nav-drawer {
+      display: flex;
+    }
+
+    details.nav-mobile .nav-drawer a {
+      font-size: var(--text-base);
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      display: block;
+      min-height: 44px;
+    }
+
+    details.nav-mobile .nav-drawer a:last-child {
+      border-bottom: none;
+    }
+
+    details.nav-mobile .nav-drawer a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 767px) {
+      .nav-desktop {
+        display: none;
+      }
+
+      .nav-mobile {
+        display: block;
+      }
+    }
+  </style>
+
+  <nav data-name="Primary nav" aria-label="Primary navigation" data-fh-id="fh-1" style="">
+    <div class="nav-inner" data-fh-id="fh-2" data-name="Nav inner" analytics-name="div">
+      <a class="nav-logo" data-name="Nav logo" analytics-name="text" data-fh-id="fh-3" href="#hero">HJ<span
+          data-fh-id="fh-4" data-name="Text">.</span></a>
+      <ul class="nav-desktop" data-name="Desktop nav links" analytics-name="header" data-fh-id="fh-5"
+        data-fh-collection="desktop-nav-links">
+        <li data-fh-id="fh-6" data-name="List item" data-fh-item=""><a data-name="About nav link"
+            analytics-name="button" data-fh-id="fh-7" data-fh-field="about-nav-link" href="#about">About</a></li>
+        <li data-fh-id="fh-8" data-name="List item" data-fh-item=""><a data-name="Projects nav link"
+            analytics-name="button" data-fh-id="fh-9" data-fh-field="projects-nav-link" href="#projects">Projects</a>
+        </li>
+        <li data-fh-id="fh-10" data-name="List item" data-fh-item=""><a data-name="Experience nav link"
+            analytics-name="button" data-fh-id="fh-11" data-fh-field="experience-nav-link"
+            href="#experience">Experience</a></li>
+        <li data-fh-id="fh-12" data-name="List item" data-fh-item=""><a data-name="Skills nav link"
+            analytics-name="button" data-fh-id="fh-13" data-fh-field="skills-nav-link" href="#skills">Skills</a></li>
+        <li data-fh-id="fh-14" data-name="List item" data-fh-item="" data-fh-item-template=""><a
+            class="nav-cta __freeform_button__" data-name="Contact nav CTA" analytics-name="button" data-fh-id="fh-15"
+            data-fh-field="contact-nav-cta" href="mailto:himanshujha5288@gmail.com">Hire Me</a></li>
+      </ul>
+      <details class="nav-mobile" data-name="Mobile nav" analytics-name="header" data-fh-id="fh-16">
+        <summary class="nav-toggle" aria-label="Open navigation menu" data-fh-id="fh-17" data-name="Nav toggle">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" data-fh-collection="items">
+            <line x1="3" y1="6" x2="19" y2="6" data-fh-item=""></line>
+            <line x1="3" y1="11" x2="19" y2="11" data-fh-item=""></line>
+            <line x1="3" y1="16" x2="19" y2="16" data-fh-item="" data-fh-item-template=""></line>
+          </svg>
+        </summary>
+        <div class="nav-drawer" data-fh-id="fh-18" data-name="Nav drawer" analytics-name="div"
+          data-fh-collection="nav-drawer">
+          <a data-fh-id="fh-19" data-name="Link" data-fh-item="" data-fh-field="link" href="#about">About</a>
+          <a data-fh-id="fh-20" data-name="Link" data-fh-item="" data-fh-field="link" href="#projects">Projects</a>
+          <a data-fh-id="fh-21" data-name="Link" data-fh-item="" data-fh-field="link" href="#experience">Experience</a>
+          <a data-fh-id="fh-22" data-name="Link" data-fh-item="" data-fh-field="link" href="#skills">Skills</a>
+          <a data-fh-id="fh-23" data-name="Link" data-fh-item="" data-fh-item-template="" data-fh-field="link"
+            href="mailto:himanshujha5288@gmail.com">himanshujha5288@gmail.com</a>
+        </div>
+      </details>
+    </div>
+  </nav>
+
+
+  <style>
+    .hero {
+      padding-top: calc(var(--nav-height) + 5rem);
+      padding-bottom: 6rem;
+      background-color: var(--bg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 55vw;
+      height: 55vw;
+      max-width: 700px;
+      max-height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, color-mix(in srgb, var(--hero-glow) 8%, transparent) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-eyebrow-line {
+      width: 32px;
+      height: 2px;
+      background-color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, var(--text-display));
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 0.25rem;
+      color: var(--text);
+    }
+
+    .hero-title-accent {
+      color: var(--text-display-accent);
+    }
+
+    .hero-subtitle {
+      font-size: var(--text-xl);
+      color: var(--fg);
+      margin-top: 1rem;
+      margin-bottom: 1.75rem;
+      line-height: 1.5;
+      max-width: 540px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-tag {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--accent);
+      background-color: color-mix(in srgb, var(--accent) 12%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+      border-radius: 4px;
+      padding: 0.3rem 0.75rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: var(--text-on-accent);
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.8rem 1.75rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      transition: opacity var(--duration-fast) ease, transform var(--duration-fast) ease;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+      color: var(--text-on-accent);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.97);
+    }
+
+    .btn-ghost {
+      background-color: transparent;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.8rem 1.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      transition: border-color var(--duration-fast) ease, color var(--duration-fast) ease, transform var(--duration-fast) ease;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost:active {
+      transform: scale(0.97);
+    }
+
+    .hero-card-panel {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .hero-card-photo {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      background-color: var(--surface-strong);
+    }
+
+    .hero-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .hero-stat {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .hero-stat-num {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .hero-stat-label {
+      font-size: var(--text-xs);
+      color: var(--fg);
+      margin-top: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card-panel {
+        display: none;
+      }
+    }
+  </style>
+
+  <header id="hero" data-name="Hero section" analytics-name="hero section" aria-label="Hero" data-fh-id="fh-24">
+    <div class="hero container" data-fh-id="fh-25" data-name="Hero" analytics-name="div">
+      <div class="hero-grid" data-fh-id="fh-26" data-name="Hero grid" analytics-name="div">
+        <div data-name="Hero content" analytics-name="1-column section" data-fh-id="fh-27">
+          <div class="hero-eyebrow" data-name="Hero eyebrow" analytics-name="div-container" data-fh-id="fh-28">
+            <div class="hero-eyebrow-line" aria-hidden="true" data-fh-id="fh-29" data-name="Hero eyebrow line"
+              analytics-name="div"></div>
+            <span class="eyebrow" data-name="Eyebrow label" analytics-name="text" data-fh-id="fh-30">Full-Stack
+              Engineer</span>
+          </div>
+          <h1 class="hero-title" data-name="Page title" analytics-name="text" data-fh-id="fh-31">
+            Himanshu<br><span class="hero-title-accent" data-fh-id="fh-32" data-name="Hero title accent">Jha.</span>
+          </h1>
+          <p class="hero-subtitle" data-name="Hero subtitle" analytics-name="text" data-fh-id="fh-33">
+            Builds systems that scale, sync in real time, and ship — from multi-tenant AI platforms to real-time
+            collaborative tools.
+          </p>
+          <div class="hero-tags" data-name="Skill tags" analytics-name="div-container" data-fh-id="fh-34">
+            <span class="hero-tag" data-name="Tag React" analytics-name="text" data-fh-id="fh-35">React</span>
+            <span class="hero-tag" data-name="Tag Node.js" analytics-name="text" data-fh-id="fh-36">Node.js</span>
+            <span class="hero-tag" data-name="Tag Python" analytics-name="text" data-fh-id="fh-37">Python</span>
+            <span class="hero-tag" data-name="Tag AI/RAG" analytics-name="text" data-fh-id="fh-38">AI / RAG</span>
+            <span class="hero-tag" data-name="Tag Distributed Systems" analytics-name="text"
+              data-fh-id="fh-39">Distributed Systems</span>
+            <span class="hero-tag" data-name="Tag WebSockets" analytics-name="text" data-fh-id="fh-40">WebSockets</span>
+          </div>
+          <div class="hero-actions" data-name="Hero CTAs" analytics-name="div-container" data-fh-id="fh-41"
+            data-fh-layout="split">
+            <a class="btn-primary __freeform_button__" data-name="View Projects CTA" analytics-name="button"
+              data-fh-id="fh-42" data-fh-side="image" href="#projects">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M8 3l5 5-5 5"></path>
+              </svg>
+              See My Work
+            </a>
+            <a class="btn-ghost __freeform_button__" data-name="Contact CTA" analytics-name="button" data-fh-id="fh-43"
+              data-fh-side="button" href="mailto:himanshujha5288@gmail.com">Get in Touch</a>
+          </div>
+        </div>
+        <aside class="hero-card-panel" data-name="Hero stats card" analytics-name="card" aria-label="Quick stats"
+          data-fh-id="fh-44">
+          <div class="hero-card-photo" data-name="Hero portrait" analytics-name="image" data-fh-id="fh-45">
+            <img
+              alt="Professional portrait of a software engineer at a desk with dual monitors showing code, modern dark workspace, cinematic lighting"
+              data-name="Portrait photo" analytics-name="image" data-fh-id="fh-46"
+              data-asset-id="8f2c6a16-aeb8-4273-a036-90c2df8b6567"
+              src="images/8f2c6a16-aeb8-4273-a036-90c2df8b6567.jpg">
+          </div>
+          <div class="hero-stats" data-name="Stats grid" analytics-name="div-container" data-fh-id="fh-47">
+            <div class="hero-stat" data-name="Stat projects" analytics-name="card" data-fh-id="fh-48">
+              <div class="hero-stat-num" data-name="Projects count" analytics-name="text" data-fh-id="fh-49">8+</div>
+              <div class="hero-stat-label" data-name="Projects label" analytics-name="text" data-fh-id="fh-50">Projects
+                Shipped</div>
+            </div>
+            <div class="hero-stat" data-name="Stat experience" analytics-name="card" data-fh-id="fh-51">
+              <div class="hero-stat-num" data-name="Experience count" analytics-name="text" data-fh-id="fh-52">1yr+
+              </div>
+              <div class="hero-stat-label" data-name="Experience label" analytics-name="text" data-fh-id="fh-53">
+                Industry XP</div>
+            </div>
+            <div class="hero-stat" data-name="Stat stacks" analytics-name="card" data-fh-id="fh-54">
+              <div class="hero-stat-num" data-name="Stacks count" analytics-name="text" data-fh-id="fh-55">15+</div>
+              <div class="hero-stat-label" data-name="Stacks label" analytics-name="text" data-fh-id="fh-56">Tech Stacks
+              </div>
+            </div>
+            <div class="hero-stat" data-name="Stat domains" analytics-name="card" data-fh-id="fh-57">
+              <div class="hero-stat-num" data-name="Domains count" analytics-name="text" data-fh-id="fh-58">3</div>
+              <div class="hero-stat-label" data-name="Domains label" analytics-name="text" data-fh-id="fh-59">Domains
+                (AI, IoT, Web)</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+
+  <style>
+    #about {
+      background-color: var(--surface);
+    }
+
+    .about-section {
+      padding-block: 6rem;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-eyebrow-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-eyebrow-line {
+      width: 32px;
+      height: 2px;
+      background-color: var(--accent);
+    }
+
+    .about-title {
+      font-size: clamp(var(--text-3xl), 3vw, var(--text-4xl));
+      margin-bottom: 1.25rem;
+    }
+
+    .about-body {
+      color: var(--fg);
+      font-size: var(--text-base);
+      line-height: 1.75;
+      margin-bottom: 1.75rem;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .about-highlight {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      transition: border-color var(--duration-base) ease;
+      cursor: default;
+    }
+
+    .about-highlight:hover {
+      border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+    }
+
+    .about-highlight-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background-color: color-mix(in srgb, var(--accent) 12%, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .about-highlight-label {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+
+    .about-highlight-sub {
+      font-size: var(--text-xs);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+
+    .about-image-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+    }
+
+    .about-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image-wrap {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <section id="about" data-name="About section" analytics-name="section" aria-label="About" data-fh-id="fh-279">
+    <div class="about-section container" data-fh-id="fh-280" data-name="About section" analytics-name="div">
+      <div class="about-layout" data-name="About layout" analytics-name="2-column section" data-fh-id="fh-281">
+        <div data-name="About content" analytics-name="1-column section" data-fh-id="fh-282">
+          <div class="about-eyebrow-row" data-name="About eyebrow row" analytics-name="div-container"
+            data-fh-id="fh-283">
+            <div class="about-eyebrow-line" aria-hidden="true" data-fh-id="fh-284" data-name="About eyebrow line"
+              analytics-name="div"></div>
+            <span class="eyebrow" data-name="About eyebrow" analytics-name="text" data-fh-id="fh-285">About Me</span>
+          </div>
+          <h2 class="about-title" data-name="About heading" analytics-name="text" data-fh-id="fh-286">Engineer first.
+            Problem-solver by instinct.</h2>
+          <p class="about-body" data-name="About body" analytics-name="text" data-fh-id="fh-287">
+            Full-stack engineer with a B.E. in Electronics and Communication Engineering, specializing in distributed
+            systems, AI/RAG pipelines, and real-time applications. Shipped production software at Hero Cycles Ltd.
+            across AI automation, IoT hardware, and customer engagement — and built multi-tenant AI orchestration
+            platforms and collaborative dev tools independently. Drawn to the intersection of AI and infrastructure,
+            where retrieval, orchestration, and scale meet real user problems.
+          </p>
+          <div class="about-highlights" data-name="About highlights grid" analytics-name="div-container"
+            data-fh-id="fh-288">
+            <div class="about-highlight" data-name="AI highlight card" analytics-name="card" data-fh-id="fh-289"
+              data-fh-layout="split">
+              <div class="about-highlight-icon" data-name="AI icon" analytics-name="decorative element"
+                data-fh-id="fh-290" data-fh-side="image">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="9" r="3"></circle>
+                  <path
+                    d="M9 1v2M9 15v2M1 9h2M15 9h2M3.22 3.22l1.42 1.42M13.36 13.36l1.42 1.42M3.22 14.78l1.42-1.42M13.36 4.64l1.42-1.42">
+                  </path>
+                </svg>
+              </div>
+              <div data-name="AI highlight text" analytics-name="div-container" data-fh-id="fh-291" data-fh-side="text">
+                <div class="about-highlight-label" data-name="AI highlight label" analytics-name="text"
+                  data-fh-id="fh-292">AI / LLM Systems</div>
+                <div class="about-highlight-sub" data-name="AI highlight sub" analytics-name="text" data-fh-id="fh-293">
+                  RAG pipelines, vector search, multi-tenant orchestration</div>
+              </div>
+            </div>
+            <div class="about-highlight" data-name="RT highlight card" analytics-name="card" data-fh-id="fh-294"
+              data-fh-layout="split">
+              <div class="about-highlight-icon" data-name="RT icon" analytics-name="decorative element"
+                data-fh-id="fh-295" data-fh-side="image">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 9h4l3-6 4 12 3-6h2"></path>
+                </svg>
+              </div>
+              <div data-name="RT highlight text" analytics-name="div-container" data-fh-id="fh-296" data-fh-side="text">
+                <div class="about-highlight-label" data-name="RT highlight label" analytics-name="text"
+                  data-fh-id="fh-297">Real-Time Systems</div>
+                <div class="about-highlight-sub" data-name="RT highlight sub" analytics-name="text" data-fh-id="fh-298">
+                  WebSockets, SSE, Redis Pub/Sub, sub-50ms sync</div>
+              </div>
+            </div>
+            <div class="about-highlight" data-name="IoT highlight card" analytics-name="card" data-fh-id="fh-299"
+              data-fh-layout="split">
+              <div class="about-highlight-icon" data-name="IoT icon" analytics-name="decorative element"
+                data-fh-id="fh-300" data-fh-side="image">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="5" width="16" height="9" rx="2"></rect>
+                  <path d="M5 5V3m4 2V2m4 3V4"></path>
+                </svg>
+              </div>
+              <div data-name="IoT highlight text" analytics-name="div-container" data-fh-id="fh-301"
+                data-fh-side="text">
+                <div class="about-highlight-label" data-name="IoT highlight label" analytics-name="text"
+                  data-fh-id="fh-302">Embedded / IoT</div>
+                <div class="about-highlight-sub" data-name="IoT highlight sub" analytics-name="text"
+                  data-fh-id="fh-303">ESP32, BLE HID, IMU sensors, C/C++ firmware</div>
+              </div>
+            </div>
+            <div class="about-highlight" data-name="Interests highlight card" analytics-name="card" data-fh-id="fh-304"
+              data-fh-layout="split">
+              <div class="about-highlight-icon" data-name="Interests icon" analytics-name="decorative element"
+                data-fh-id="fh-305" data-fh-side="image">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 1l2.09 4.26L16 6.27l-3.5 3.41.83 4.82L9 12.22l-4.33 2.28.83-4.82L2 6.27l4.91-.71L9 1z">
+                  </path>
+                </svg>
+              </div>
+              <div data-name="Interests highlight text" analytics-name="div-container" data-fh-id="fh-306"
+                data-fh-side="text">
+                <div class="about-highlight-label" data-name="Interests label" analytics-name="text"
+                  data-fh-id="fh-307">Interests</div>
+                <div class="about-highlight-sub" data-name="Interests sub" analytics-name="text" data-fh-id="fh-308">
+                  Chess, cricket, technical reading, system design</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrap" data-name="About image" analytics-name="image" data-fh-id="fh-309">
+          <img
+            alt="Software engineer reviewing architecture diagrams on a whiteboard, clean modern office environment, natural light, professional and focused atmosphere"
+            data-name="About portrait" analytics-name="image" data-fh-id="fh-310"
+            data-asset-id="a2898e55-75f7-4ea9-ab12-f46d048b0110" src="images/a2898e55-75f7-4ea9-ab12-f46d048b0110.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #projects {
+      background-color: var(--bg);
+    }
+
+    .projects-section {
+      padding-block: 6rem;
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header-left {
+      max-width: 520px;
+    }
+
+    .section-title {
+      margin-top: 0.75rem;
+      font-size: clamp(var(--text-3xl), 3.5vw, var(--text-4xl));
+    }
+
+    .section-desc {
+      color: var(--fg);
+      margin-top: 0.75rem;
+      font-size: var(--text-base);
+      line-height: 1.65;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color var(--duration-base) ease, transform var(--duration-base) ease;
+      cursor: default;
+    }
+
+    .project-card:hover {
+      border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+      transform: translateY(-4px);
+    }
+
+    .project-card-featured {
+      grid-column: span 2;
+      background-color: var(--bg);
+    }
+
+    .project-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .project-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background-color: color-mix(in srgb, var(--accent) 14%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .project-year {
+      font-size: var(--text-xs);
+      color: var(--fg);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 0.15rem;
+    }
+
+    .project-name {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .project-desc {
+      font-size: var(--text-sm);
+      color: var(--fg);
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .project-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .project-bullets li {
+      font-size: var(--text-sm);
+      color: var(--fg);
+      line-height: 1.55;
+      padding-left: 1.1em;
+      position: relative;
+    }
+
+    .project-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--accent);
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .stack-tag {
+      font-size: var(--text-xs);
+      color: var(--muted);
+      font-family: var(--font-body);
+      font-weight: 600;
+      background-color: color-mix(in srgb, var(--muted) 15%, transparent);
+      border-radius: 4px;
+      padding: 0.2rem 0.55rem;
+      letter-spacing: 0.04em;
+      color: var(--fg);
+    }
+
+    @media (max-width: 1024px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .project-card-featured {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card-featured {
+        grid-column: span 1;
+      }
+
+      .section-header {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <section id="projects" data-name="Projects section" analytics-name="section" aria-label="Projects" data-fh-id="fh-60">
+    <div class="projects-section container" data-fh-id="fh-61" data-name="Projects section" analytics-name="div">
+      <div class="section-header" data-name="Projects header" analytics-name="2-column section" data-fh-id="fh-62">
+        <div class="section-header-left" data-name="Section title group" analytics-name="1-column section"
+          data-fh-id="fh-63">
+          <span class="eyebrow" data-name="Projects eyebrow" analytics-name="text" data-fh-id="fh-64">Selected
+            Work</span>
+          <h2 class="section-title" data-name="Projects heading" analytics-name="text" data-fh-id="fh-65">Eight
+            projects. Real constraints. Systems that shipped.</h2>
+          <p class="section-desc" data-name="Projects description" analytics-name="text" data-fh-id="fh-66">From AI
+            orchestration at enterprise scale to hardware firmware on real bicycles.</p>
+        </div>
+      </div>
+
+      <div class="projects-grid" data-name="Projects grid" analytics-name="div-container" data-fh-id="fh-67">
+
+
+        <article class="project-card project-card-featured" data-name="NexusAI card" analytics-name="card"
+          data-fh-id="fh-68">
+          <div class="project-card-top" data-name="NexusAI top" analytics-name="div-container" data-fh-id="fh-69"
+            data-fh-layout="split">
+            <div class="project-icon" data-name="NexusAI icon" analytics-name="decorative element" data-fh-id="fh-70"
+              data-fh-side="image">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="10" r="3"></circle>
+                <path
+                  d="M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42">
+                </path>
+              </svg>
+            </div>
+            <span class="project-year" data-name="NexusAI year" analytics-name="text" data-fh-id="fh-71"
+              data-fh-side="text">2026 · Featured</span>
+          </div>
+          <div data-name="NexusAI name group" analytics-name="div-container" data-fh-id="fh-72">
+            <h3 class="project-name" data-name="NexusAI title" analytics-name="text" data-fh-id="fh-73">NexusAI</h3>
+            <p class="project-desc" data-name="NexusAI desc" analytics-name="text" data-fh-id="fh-74">Multi-tenant AI
+              orchestration platform engineered for 1,000+ concurrent SSE chat streams across isolated tenant knowledge
+              bases.</p>
+          </div>
+          <ul class="project-bullets" data-name="NexusAI bullets" analytics-name="div-container" data-fh-id="fh-75"
+            data-fh-collection="nexusai-bullets">
+            <li data-name="NexusAI bullet 1" analytics-name="text" data-fh-id="fh-76" data-fh-item=""
+              data-fh-field="nexusai-bullet-1">Polyglot microservices: Node.js/Express streaming gateway +
+              Python/FastAPI orchestrator with zero-buffer token piping</li>
+            <li data-name="NexusAI bullet 2" analytics-name="text" data-fh-id="fh-77" data-fh-item=""
+              data-fh-field="nexusai-bullet-2">LangChain RAG pipeline — PyTorch/HuggingFace embeddings, dual-mode FAISS
+              + Upstash Vector, Kafka/QStash ingestion workers</li>
+            <li data-name="NexusAI bullet 3" analytics-name="text" data-fh-id="fh-78" data-fh-item=""
+              data-fh-item-template="" data-fh-field="nexusai-bullet-3">Prompt-injection guardrails, automated PII
+              scrubbing, JWT multi-tenant isolation across the full request pipeline</li>
+          </ul>
+          <div class="project-stack" data-name="NexusAI stack" analytics-name="div-container" data-fh-id="fh-79"
+            data-fh-collection="nexusai-stack">
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-80" data-fh-item=""
+              data-fh-field="stack-tag">Node.js</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-81" data-fh-item=""
+              data-fh-field="stack-tag">FastAPI</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-82" data-fh-item=""
+              data-fh-field="stack-tag">LangChain</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-83" data-fh-item=""
+              data-fh-field="stack-tag">FAISS</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-84" data-fh-item=""
+              data-fh-field="stack-tag">Kafka</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-85" data-fh-item=""
+              data-fh-field="stack-tag">Redis</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-86" data-fh-item=""
+              data-fh-field="stack-tag">React / TS</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-87" data-fh-item=""
+              data-fh-item-template="" data-fh-field="stack-tag">Upstash Vector</span>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-name="DevFlow card" analytics-name="card" data-fh-id="fh-88">
+          <div class="project-card-top" data-name="DevFlow top" analytics-name="div-container" data-fh-id="fh-89"
+            data-fh-layout="split">
+            <div class="project-icon" data-name="DevFlow icon" analytics-name="decorative element" data-fh-id="fh-90"
+              data-fh-side="image">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-fh-collection="items">
+                <rect x="2" y="3" width="5" height="14" rx="1" data-fh-item=""></rect>
+                <rect x="9" y="3" width="5" height="9" rx="1" data-fh-item=""></rect>
+                <rect x="14" y="3" width="4" height="5" rx="1" data-fh-item="" data-fh-item-template=""></rect>
+                <path d="M16 3h2v5h-2z"></path>
+              </svg>
+            </div>
+            <span class="project-year" data-name="DevFlow year" analytics-name="text" data-fh-id="fh-91"
+              data-fh-side="text">2026</span>
+          </div>
+          <h3 class="project-name" data-name="DevFlow title" analytics-name="text" data-fh-id="fh-92">DevFlow</h3>
+          <p class="project-desc" data-name="DevFlow desc" analytics-name="text" data-fh-id="fh-93">GitHub-integrated
+            Kanban platform with real-time collaboration, AI-powered PR summaries, and a distributed backend built for
+            scale.</p>
+          <ul class="project-bullets" data-name="DevFlow bullets" analytics-name="div-container" data-fh-id="fh-94"
+            data-fh-collection="devflow-bullets">
+            <li data-name="DevFlow bullet 1" analytics-name="text" data-fh-id="fh-95" data-fh-item=""
+              data-fh-field="devflow-bullet-1">Redis Pub/Sub + BullMQ + Socket.io for scalable real-time sync across
+              concurrent users</li>
+            <li data-name="DevFlow bullet 2" analytics-name="text" data-fh-id="fh-96" data-fh-item=""
+              data-fh-field="devflow-bullet-2">GitHub OAuth, webhooks, and AI-generated PR summary cards on the Kanban
+              board</li>
+            <li data-name="DevFlow bullet 3" analytics-name="text" data-fh-id="fh-97" data-fh-item=""
+              data-fh-item-template="" data-fh-field="devflow-bullet-3">Dockerized and deployed to Fly.io with
+              PostgreSQL + Prisma ORM</li>
+          </ul>
+          <div class="project-stack" data-name="DevFlow stack" analytics-name="div-container" data-fh-id="fh-98"
+            data-fh-collection="devflow-stack">
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-99" data-fh-item=""
+              data-fh-field="stack-tag">React + Vite</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-100" data-fh-item=""
+              data-fh-field="stack-tag">Node.js</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-101" data-fh-item=""
+              data-fh-field="stack-tag">Socket.io</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-102" data-fh-item=""
+              data-fh-field="stack-tag">Redis</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-103" data-fh-item=""
+              data-fh-field="stack-tag">PostgreSQL</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-104" data-fh-item=""
+              data-fh-item-template="" data-fh-field="stack-tag">Docker</span>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-name="WhatsApp chatbot card" analytics-name="card" data-fh-id="fh-105">
+          <div class="project-card-top" data-name="Chatbot top" analytics-name="div-container" data-fh-id="fh-106"
+            data-fh-layout="split">
+            <div class="project-icon" data-name="Chatbot icon" analytics-name="decorative element" data-fh-id="fh-107"
+              data-fh-side="image">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M18 10c0 4.418-3.582 8-8 8a7.96 7.96 0 0 1-4.244-1.226L2 18l1.226-3.756A7.96 7.96 0 0 1 2 10c0-4.418 3.582-8 8-8s8 3.582 8 8z">
+                </path>
+              </svg>
+            </div>
+            <span class="project-year" data-name="Chatbot year" analytics-name="text" data-fh-id="fh-108"
+              data-fh-side="text">2026 · Hero Cycles</span>
+          </div>
+          <h3 class="project-name" data-name="Chatbot title" analytics-name="text" data-fh-id="fh-109">QR WhatsApp
+            Chatbot</h3>
+          <p class="project-desc" data-name="Chatbot desc" analytics-name="text" data-fh-id="fh-110">QR code-activated
+            WhatsApp chatbot for Hero Cycles — customers scan a code on their bicycle, then submit feedback or raise a
+            complaint instantly.</p>
+          <ul class="project-bullets" data-name="Chatbot bullets" analytics-name="div-container" data-fh-id="fh-111">
+            <li data-name="Chatbot bullet 1" analytics-name="text" data-fh-id="fh-112">Automated complaint
+              categorization and routing to the correct support team</li>
+            <li data-name="Chatbot bullet 2" analytics-name="text" data-fh-id="fh-113">End-to-end workflow: input
+              validation, issue tracking, and stakeholder notifications</li>
+          </ul>
+          <div class="project-stack" data-name="Chatbot stack" analytics-name="div-container" data-fh-id="fh-114"
+            data-fh-collection="chatbot-stack">
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-115" data-fh-item=""
+              data-fh-field="stack-tag">WhatsApp API</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-116" data-fh-item=""
+              data-fh-field="stack-tag">Workflow Automation</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-117" data-fh-item=""
+              data-fh-item-template="" data-fh-field="stack-tag">QR Integration</span>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-name="AI Poster card" analytics-name="card" data-fh-id="fh-118">
+          <div class="project-card-top" data-name="Poster top" analytics-name="div-container" data-fh-id="fh-119"
+            data-fh-layout="split">
+            <div class="project-icon" data-name="Poster icon" analytics-name="decorative element" data-fh-id="fh-120"
+              data-fh-side="image">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="16" height="16" rx="2"></rect>
+                <path d="M6 14l3-4 2.5 3 2-2.5 2.5 3.5"></path>
+                <circle cx="7" cy="7" r="1.5"></circle>
+              </svg>
+            </div>
+            <span class="project-year" data-name="Poster year" analytics-name="text" data-fh-id="fh-121"
+              data-fh-side="text">2026 · Hero Cycles</span>
+          </div>
+          <h3 class="project-name" data-name="Poster title" analytics-name="text" data-fh-id="fh-122">AI Poster
+            Generation</h3>
+          <p class="project-desc" data-name="Poster desc" analytics-name="text" data-fh-id="fh-123">n8n workflow that
+            auto-generates professional bicycle marketing posters from a form submission — image upload, AI content
+            generation, automated layout, downloadable output.</p>
+          <div class="project-stack" data-name="Poster stack" analytics-name="div-container" data-fh-id="fh-124"
+            data-fh-collection="poster-stack">
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-125" data-fh-item=""
+              data-fh-field="stack-tag">n8n</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-126" data-fh-item=""
+              data-fh-field="stack-tag">AI Generation</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-127" data-fh-item=""
+              data-fh-field="stack-tag">Prompt Engineering</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-128" data-fh-item=""
+              data-fh-item-template="" data-fh-field="stack-tag">JSON Processing</span>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-name="Bicycle controller card" analytics-name="card" data-fh-id="fh-129">
+          <div class="project-card-top" data-name="Controller top" analytics-name="div-container" data-fh-id="fh-130"
+            data-fh-layout="split">
+            <div class="project-icon" data-name="Controller icon" analytics-name="decorative element"
+              data-fh-id="fh-131" data-fh-side="image">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="10" r="8"></circle>
+                <path d="M10 6v4l3 3"></path>
+              </svg>
+            </div>
+            <span class="project-year" data-name="Controller year" analytics-name="text" data-fh-id="fh-132"
+              data-fh-side="text">2025–26 · Hero Cycles</span>
+          </div>
+          <h3 class="project-name" data-name="Controller title" analytics-name="text" data-fh-id="fh-133">Wireless
+            Bicycle Gamepad</h3>
+          <p class="project-desc" data-name="Controller desc" analytics-name="text" data-fh-id="fh-134">Dual-node ESP32
+            wireless gamepad built on a real bicycle — ESP-NOW inter-node communication, MPU9250 IMU for steering,
+            Hall-effect sensor for pedal cadence. Emulates BLE HID, compatible with PC, console, and mobile.</p>
+          <div class="project-stack" data-name="Controller stack" analytics-name="div-container" data-fh-id="fh-135"
+            data-fh-collection="controller-stack">
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-136" data-fh-item=""
+              data-fh-field="stack-tag">ESP32</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-137" data-fh-item=""
+              data-fh-field="stack-tag">ESP-NOW</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-138" data-fh-item=""
+              data-fh-field="stack-tag">BLE HID</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-139" data-fh-item=""
+              data-fh-field="stack-tag">C/C++</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-140" data-fh-item=""
+              data-fh-item-template="" data-fh-field="stack-tag">MPU9250</span>
+          </div>
+        </article>
+
+
+        <article class="project-card" data-name="Interview platform card" analytics-name="card" data-fh-id="fh-141">
+          <div class="project-card-top" data-name="Interview top" analytics-name="div-container" data-fh-id="fh-142"
+            data-fh-layout="split">
+            <div class="project-icon" data-name="Interview icon" analytics-name="decorative element" data-fh-id="fh-143"
+              data-fh-side="image">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8l-4-6z"></path>
+                <path d="M12 2v6h6M8 13h4M8 10h4"></path>
+              </svg>
+            </div>
+            <span class="project-year" data-name="Interview year" analytics-name="text" data-fh-id="fh-144"
+              data-fh-side="text">2025</span>
+          </div>
+          <h3 class="project-name" data-name="Interview title" analytics-name="text" data-fh-id="fh-145">AI Mock
+            Interview Platform</h3>
+          <p class="project-desc" data-name="Interview desc" analytics-name="text" data-fh-id="fh-146">MERN app that
+            generates AI-driven questions across 10+ job domains using DeepSeek LLM. Whisper Turbo 3 for speech-to-text
+            and Web Speech API for TTS — fully hands-free voice interaction with real-time Socket.io feedback streaming.
+          </p>
+          <div class="project-stack" data-name="Interview stack" analytics-name="div-container" data-fh-id="fh-147"
+            data-fh-collection="interview-stack">
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-148" data-fh-item=""
+              data-fh-field="stack-tag">MERN</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-149" data-fh-item=""
+              data-fh-field="stack-tag">DeepSeek LLM</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-150" data-fh-item=""
+              data-fh-field="stack-tag">Whisper</span>
+            <span class="stack-tag" data-name="Stack tag" analytics-name="text" data-fh-id="fh-151" data-fh-item=""
+              data-fh-item-template="" data-fh-field="stack-tag">Socket.io</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    #experience {
+      background-color: var(--surface);
+    }
+
+    .experience-section {
+      padding-block: 6rem;
+    }
+
+    .exp-layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .exp-sticky {
+      position: sticky;
+      top: calc(var(--nav-height) + 2rem);
+    }
+
+    .exp-sticky-title {
+      font-size: clamp(var(--text-3xl), 3vw, var(--text-4xl));
+      margin-top: 0.75rem;
+      line-height: 1.1;
+    }
+
+    .exp-sticky-body {
+      color: var(--fg);
+      margin-top: 1rem;
+      font-size: var(--text-base);
+      line-height: 1.65;
+    }
+
+    .exp-contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 2rem;
+    }
+
+    .exp-contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: var(--text-sm);
+      color: var(--fg);
+    }
+
+    .exp-contact-list svg {
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .exp-contact-list a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
+    .exp-contact-list a:hover {
+      color: var(--link-hover);
+    }
+
+    .exp-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0 1.5rem;
+      padding-bottom: 3rem;
+      position: relative;
+    }
+
+    .exp-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .exp-line {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .exp-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.35rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    .exp-line-bar {
+      width: 2px;
+      flex-grow: 1;
+      background-color: var(--border);
+      margin-top: 0.5rem;
+    }
+
+    .exp-item:last-child .exp-line-bar {
+      display: none;
+    }
+
+    .exp-content {
+      padding-top: 0;
+    }
+
+    .exp-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-company {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .exp-badge {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-on-accent);
+      background-color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .exp-period {
+      font-size: var(--text-xs);
+      color: var(--fg);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .exp-role {
+      font-size: var(--text-base);
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .exp-bullets li {
+      font-size: var(--text-sm);
+      color: var(--fg);
+      line-height: 1.6;
+      padding-left: 1.1em;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: color-mix(in srgb, var(--accent) 60%, transparent);
+    }
+
+    @media (max-width: 900px) {
+      .exp-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .exp-sticky {
+        position: static;
+      }
+    }
+  </style>
+
+  <section id="experience" data-name="Experience section" analytics-name="section" aria-label="Work Experience"
+    data-fh-id="fh-152">
+    <div class="experience-section container" data-fh-id="fh-153" data-name="Experience section" analytics-name="div">
+      <div class="exp-layout" data-name="Experience layout" analytics-name="2-column section" data-fh-id="fh-154"
+        data-fh-layout="split">
+        <div class="exp-sticky" data-name="Experience sidebar" analytics-name="1-column section" data-fh-id="fh-155"
+          data-fh-side="image">
+          <span class="eyebrow" data-name="Experience eyebrow" analytics-name="text" data-fh-id="fh-156">Where I've
+            Worked</span>
+          <h2 class="exp-sticky-title" data-name="Experience heading" analytics-name="text" data-fh-id="fh-157">
+            Production software, real deadlines.</h2>
+          <p class="exp-sticky-body" data-name="Experience body" analytics-name="text" data-fh-id="fh-158">Built and
+            shipped at Hero Cycles Ltd. across AI automation, IoT firmware, and customer engagement systems — all in
+            production environments under real constraints.</p>
+          <ul class="exp-contact-list" data-name="Contact links" analytics-name="div-container" data-fh-id="fh-159">
+            <li data-name="Location item" analytics-name="text" data-fh-id="fh-160">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                <path d="M8 14s5-4.5 5-8a5 5 0 0 0-10 0c0 3.5 5 8 5 8z"></path>
+              </svg>
+              Gurugram, India
+            </li>
+            <li data-name="Email item" analytics-name="text" data-fh-id="fh-161" data-fh-layout="split">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-fh-side="image">
+                <rect x="1" y="3" width="14" height="10" rx="2"></rect>
+                <path d="M1 5l7 5 7-5"></path>
+              </svg>
+              <a data-name="Email link" analytics-name="button" data-fh-id="fh-162" data-fh-side="text"
+                href="mailto:himanshujha5288@gmail.com">himanshujha5288@gmail.com</a>
+            </li>
+            <li data-name="Phone item" analytics-name="text" data-fh-id="fh-163">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14 11.5A9.7 9.7 0 0 1 10.5 14c-5-1-8-6.5-7-11.5A9.7 9.7 0 0 1 6.5 2l2 4-1.5 1.5a8 8 0 0 0 3.5 3.5L12 9.5l2 2z">
+                </path>
+              </svg>
+              <a href="tel:+917520109861">+91-7520109861</a>
+            </li>
+            <li data-name="GitHub item" analytics-name="text" data-fh-id="fh-164" data-fh-layout="split">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-fh-side="image">
+                <path
+                  d="M6 12c-3 1-3-2-4-2m8 4v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 13 2.77 5.07 5.07 0 0 0 13 .06S11.86-.27 9 1.6a13.38 13.38 0 0 0-6 0C3.14-.27 2 .06 2 .06A5.07 5.07 0 0 0 2 2.77 5.44 5.44 0 0 0 .46 6.65c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 6 16.13V20">
+                </path>
+              </svg>
+              <a target="_blank" rel="noopener noreferrer" data-name="GitHub link" analytics-name="button"
+                data-fh-id="fh-165" data-fh-side="text" href="http://www.github.com/himanshuujha">GitHub Profile</a>
+            </li>
+            <li data-name="LinkedIn item" analytics-name="text" data-fh-id="fh-166" data-fh-layout="split">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-fh-side="image">
+                <rect x="2" y="2" width="12" height="12" rx="2"></rect>
+                <path d="M6 10V7m4 3V8.5a1.5 1.5 0 0 0-3 0M5 6h.01"></path>
+              </svg>
+              <a target="_blank" rel="noopener noreferrer" data-name="LinkedIn link" analytics-name="button"
+                data-fh-id="fh-167" data-fh-side="text"
+                href="http://www.linkedin.com/in/himanshu-jha-34a230249">LinkedIn
+                Profile</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-timeline" data-name="Timeline" analytics-name="timeline" data-fh-id="fh-168"
+          data-fh-side="text">
+
+          <div class="exp-item" data-name="Hero Cycles experience" analytics-name="timeline item" data-fh-id="fh-169">
+            <div class="exp-line" aria-hidden="true" data-fh-id="fh-170" data-name="Exp line" analytics-name="div">
+              <div class="exp-dot" data-fh-id="fh-171" data-name="Exp dot" analytics-name="div"></div>
+              <div class="exp-line-bar" data-fh-id="fh-172" data-name="Exp line bar" analytics-name="div"></div>
+            </div>
+            <div class="exp-content" data-name="Hero Cycles content" analytics-name="div-container" data-fh-id="fh-173">
+              <div class="exp-meta" data-name="Experience meta" analytics-name="div-container" data-fh-id="fh-174">
+                <span class="exp-company" data-name="Company name" analytics-name="text" data-fh-id="fh-175">Hero Cycles
+                  Ltd.</span>
+                <span class="exp-badge" data-name="Industry badge" analytics-name="text"
+                  data-fh-id="fh-176">Industry</span>
+                <span class="exp-period" data-name="Period" analytics-name="text" data-fh-id="fh-177">Aug 2025 –
+                  Present</span>
+              </div>
+              <div class="exp-role" data-name="Role title" analytics-name="text" data-fh-id="fh-178">Software Developer
+              </div>
+              <ul class="exp-bullets" data-name="Role bullets" analytics-name="div-container" data-fh-id="fh-179"
+                data-fh-collection="role-bullets">
+                <li data-name="Bullet 1" analytics-name="text" data-fh-id="fh-180" data-fh-item=""
+                  data-fh-field="bullet-1">Designed AI-powered n8n workflow automation for automated bicycle marketing
+                  poster generation from product image + feature submissions</li>
+                <li data-name="Bullet 2" analytics-name="text" data-fh-id="fh-181" data-fh-item=""
+                  data-fh-field="bullet-2">Built QR code-enabled WhatsApp chatbot for customer feedback, complaint
+                  registration, and automated issue routing at scale</li>
+                <li data-name="Bullet 3" analytics-name="text" data-fh-id="fh-182" data-fh-item=""
+                  data-fh-field="bullet-3">Developed production-grade ESP32/Arduino firmware in C/C++ — modular
+                  software, real-time sensor processing, wireless IoT communication</li>
+                <li data-name="Bullet 4" analytics-name="text" data-fh-id="fh-183" data-fh-item=""
+                  data-fh-item-template="" data-fh-field="bullet-4">Dual-node wireless bicycle gamepad: ESP-NOW
+                  inter-node comms, MPU9250 IMU steering, Hall-effect cadence, BLE HID emulation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-item" data-name="Education item" analytics-name="timeline item" data-fh-id="fh-184">
+            <div class="exp-line" aria-hidden="true" data-fh-id="fh-185" data-name="Exp line" analytics-name="div">
+              <div class="exp-dot" data-fh-id="fh-186" data-name="Exp dot" analytics-name="div"></div>
+              <div class="exp-line-bar" data-fh-id="fh-187" data-name="Exp line bar" analytics-name="div"></div>
+            </div>
+            <div class="exp-content" data-name="Education content" analytics-name="div-container" data-fh-id="fh-188">
+              <div class="exp-meta" data-name="Education meta" analytics-name="div-container" data-fh-id="fh-189">
+                <span class="exp-company" data-name="University name" analytics-name="text" data-fh-id="fh-190">UIET,
+                  Chandigarh</span>
+                <span class="exp-period" data-name="Study period" analytics-name="text" data-fh-id="fh-191">Aug 2021 –
+                  Jun 2025</span>
+              </div>
+              <div class="exp-role" data-name="Degree" analytics-name="text" data-fh-id="fh-192">B.E. Electronics &amp;
+                Communication Engineering</div>
+              <ul class="exp-bullets" data-name="Education bullets" analytics-name="div-container" data-fh-id="fh-193">
+                <li data-name="GPA" analytics-name="text" data-fh-id="fh-194">GPA: 7.61 / 10</li>
+                <li data-name="Achievement" analytics-name="text" data-fh-id="fh-195">Vidyapati Award — First Place,
+                  Inter-School Debate Competition (15+ schools)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    #skills {
+      background-color: var(--bg);
+    }
+
+    .skills-section {
+      padding-block: 6rem;
+    }
+
+    .skills-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .skills-header {
+      margin-bottom: 3rem;
+    }
+
+    .skills-intro-title {
+      margin-top: 0.75rem;
+      font-size: clamp(var(--text-3xl), 3vw, var(--text-4xl));
+    }
+
+    .skills-intro-body {
+      margin-top: 1rem;
+      color: var(--fg);
+      font-size: var(--text-base);
+      line-height: 1.65;
+    }
+
+    .skill-group {
+      margin-bottom: 2rem;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skill-group-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background-color: var(--border);
+    }
+
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-chip {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--text);
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.4rem 0.85rem;
+      transition: border-color var(--duration-fast) ease, color var(--duration-fast) ease;
+      cursor: default;
+    }
+
+    .skill-chip:hover {
+      border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+      color: var(--accent);
+    }
+
+    .skills-visual {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+    }
+
+    .skills-visual-title {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      font-family: var(--font-display);
+    }
+
+    .skill-bar-row {
+      margin-bottom: 1.25rem;
+      display: grid;
+      grid-template-columns: 140px 1fr 36px;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .skill-bar-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-bar-label {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    .skill-bar-track {
+      height: 6px;
+      background-color: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      background-color: var(--accent);
+      transform-origin: left center;
+      transition: filter var(--duration-base) ease, width 1s ease;
+    }
+
+    .skill-bar-row:hover .skill-bar-fill {
+      filter: brightness(1.2);
+      box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 40%, transparent);
+    }
+
+    @keyframes bar-grow {
+      from {
+        transform: scaleX(0);
+      }
+
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    .skill-bar-pct {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      color: var(--fg);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    @media (max-width: 900px) {
+      .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+  </style>
+
+  <section id="skills" data-name="Skills section" analytics-name="section" aria-label="Skills" data-fh-id="fh-196">
+    <div class="skills-section container" data-fh-id="fh-197" data-name="Skills section" analytics-name="div">
+      <div class="skills-layout" data-name="Skills layout" analytics-name="2-column section" data-fh-id="fh-198">
+
+        <div data-name="Skills list column" analytics-name="1-column section" data-fh-id="fh-199">
+          <div class="skills-header" data-name="Skills header" analytics-name="div-container" data-fh-id="fh-200">
+            <span class="eyebrow" data-name="Skills eyebrow" analytics-name="text" data-fh-id="fh-201">Technical
+              Stack</span>
+            <h2 class="skills-intro-title" data-name="Skills heading" analytics-name="text" data-fh-id="fh-202">Across
+              the full depth of the stack.</h2>
+            <p class="skills-intro-body" data-name="Skills body" analytics-name="text" data-fh-id="fh-203">Languages,
+              frameworks, AI pipelines, and infrastructure — built over real projects, not tutorials.</p>
+          </div>
+
+          <div class="skill-group" data-name="Frontend group" analytics-name="div-container" data-fh-id="fh-204">
+            <div class="skill-group-label" data-name="Frontend label" analytics-name="text" data-fh-id="fh-205">Frontend
+            </div>
+            <div class="skill-chips" data-name="Frontend chips" analytics-name="div-container" data-fh-id="fh-206">
+              <span class="skill-chip" data-name="React chip" analytics-name="text" data-fh-id="fh-207">React.js</span>
+              <span class="skill-chip" data-name="TypeScript chip" analytics-name="text"
+                data-fh-id="fh-208">TypeScript</span>
+              <span class="skill-chip" data-name="Vite chip" analytics-name="text" data-fh-id="fh-209">Vite</span>
+              <span class="skill-chip" data-name="Tailwind chip" analytics-name="text" data-fh-id="fh-210">Tailwind
+                CSS</span>
+              <span class="skill-chip" data-name="HTML chip" analytics-name="text" data-fh-id="fh-211">HTML5 /
+                CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-name="Backend group" analytics-name="div-container" data-fh-id="fh-212">
+            <div class="skill-group-label" data-name="Backend label" analytics-name="text" data-fh-id="fh-213">Backend
+              &amp; Systems</div>
+            <div class="skill-chips" data-name="Backend chips" analytics-name="div-container" data-fh-id="fh-214">
+              <span class="skill-chip" data-name="Node chip" analytics-name="text" data-fh-id="fh-215">Node.js</span>
+              <span class="skill-chip" data-name="Express chip" analytics-name="text"
+                data-fh-id="fh-216">Express.js</span>
+              <span class="skill-chip" data-name="FastAPI chip" analytics-name="text" data-fh-id="fh-217">FastAPI</span>
+              <span class="skill-chip" data-name="WebSockets chip" analytics-name="text"
+                data-fh-id="fh-218">WebSockets</span>
+              <span class="skill-chip" data-name="Redis chip" analytics-name="text" data-fh-id="fh-219">Redis
+                Pub/Sub</span>
+              <span class="skill-chip" data-name="BullMQ chip" analytics-name="text" data-fh-id="fh-220">BullMQ</span>
+              <span class="skill-chip" data-name="Microservices chip" analytics-name="text"
+                data-fh-id="fh-221">Microservices</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-name="AI group" analytics-name="div-container" data-fh-id="fh-222">
+            <div class="skill-group-label" data-name="AI label" analytics-name="text" data-fh-id="fh-223">AI &amp; Data
+            </div>
+            <div class="skill-chips" data-name="AI chips" analytics-name="div-container" data-fh-id="fh-224">
+              <span class="skill-chip" data-name="LangChain chip" analytics-name="text"
+                data-fh-id="fh-225">LangChain</span>
+              <span class="skill-chip" data-name="RAG chip" analytics-name="text" data-fh-id="fh-226">RAG
+                Pipelines</span>
+              <span class="skill-chip" data-name="FAISS chip" analytics-name="text" data-fh-id="fh-227">FAISS</span>
+              <span class="skill-chip" data-name="HuggingFace chip" analytics-name="text" data-fh-id="fh-228">Hugging
+                Face</span>
+              <span class="skill-chip" data-name="Prompt chip" analytics-name="text" data-fh-id="fh-229">Prompt
+                Engineering</span>
+              <span class="skill-chip" data-name="PII chip" analytics-name="text" data-fh-id="fh-230">PII
+                Scrubbing</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-name="DevOps group" analytics-name="div-container" data-fh-id="fh-231">
+            <div class="skill-group-label" data-name="DevOps label" analytics-name="text" data-fh-id="fh-232">Databases
+              &amp; DevOps</div>
+            <div class="skill-chips" data-name="DevOps chips" analytics-name="div-container" data-fh-id="fh-233">
+              <span class="skill-chip" data-name="PostgreSQL chip" analytics-name="text"
+                data-fh-id="fh-234">PostgreSQL</span>
+              <span class="skill-chip" data-name="MongoDB chip" analytics-name="text" data-fh-id="fh-235">MongoDB</span>
+              <span class="skill-chip" data-name="Prisma chip" analytics-name="text" data-fh-id="fh-236">Prisma
+                ORM</span>
+              <span class="skill-chip" data-name="Docker chip" analytics-name="text" data-fh-id="fh-237">Docker</span>
+              <span class="skill-chip" data-name="Kafka chip" analytics-name="text" data-fh-id="fh-238">Kafka</span>
+              <span class="skill-chip" data-name="n8n chip" analytics-name="text" data-fh-id="fh-239">n8n</span>
+              <span class="skill-chip" data-name="C chip" analytics-name="text" data-fh-id="fh-240">C/C++</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-name="Skills visual column" analytics-name="1-column section" data-fh-id="fh-241">
+          <div class="skills-visual" data-name="Proficiency chart" analytics-name="section" data-fh-id="fh-242">
+            <div class="skills-visual-title" data-name="Chart title" analytics-name="text" data-fh-id="fh-243">Depth by
+              Domain</div>
+
+            <div class="skill-bar-row" data-name="JS bar row" analytics-name="div-container" data-fh-id="fh-244">
+              <span class="skill-bar-label" data-name="JS label" analytics-name="text" data-fh-id="fh-245">JavaScript /
+                TS</span>
+              <div class="skill-bar-track" data-name="JS track" analytics-name="div-container" data-fh-id="fh-246">
+                <div class="skill-bar-fill" style="width: 95%" data-name="JS fill" analytics-name="decorative element"
+                  data-fh-id="fh-247"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="JS pct" analytics-name="text" data-fh-id="fh-248">95%</span>
+            </div>
+
+            <div class="skill-bar-row" data-name="Node bar row" analytics-name="div-container" data-fh-id="fh-249">
+              <span class="skill-bar-label" data-name="Node label" analytics-name="text" data-fh-id="fh-250">Node.js /
+                APIs</span>
+              <div class="skill-bar-track" data-name="Node track" analytics-name="div-container" data-fh-id="fh-251">
+                <div class="skill-bar-fill" style="width: 90%" data-name="Node fill" analytics-name="decorative element"
+                  data-fh-id="fh-252"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="Node pct" analytics-name="text" data-fh-id="fh-253">90%</span>
+            </div>
+
+            <div class="skill-bar-row" data-name="React bar row" analytics-name="div-container" data-fh-id="fh-254">
+              <span class="skill-bar-label" data-name="React label" analytics-name="text" data-fh-id="fh-255">React /
+                Frontend</span>
+              <div class="skill-bar-track" data-name="React track" analytics-name="div-container" data-fh-id="fh-256">
+                <div class="skill-bar-fill" style="width: 88%" data-name="React fill"
+                  analytics-name="decorative element" data-fh-id="fh-257"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="React pct" analytics-name="text" data-fh-id="fh-258">88%</span>
+            </div>
+
+            <div class="skill-bar-row" data-name="Python bar row" analytics-name="div-container" data-fh-id="fh-259">
+              <span class="skill-bar-label" data-name="Python label" analytics-name="text" data-fh-id="fh-260">Python /
+                FastAPI</span>
+              <div class="skill-bar-track" data-name="Python track" analytics-name="div-container" data-fh-id="fh-261">
+                <div class="skill-bar-fill" style="width: 82%" data-name="Python fill"
+                  analytics-name="decorative element" data-fh-id="fh-262"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="Python pct" analytics-name="text" data-fh-id="fh-263">82%</span>
+            </div>
+
+            <div class="skill-bar-row" data-name="AI bar row" analytics-name="div-container" data-fh-id="fh-264">
+              <span class="skill-bar-label" data-name="AI label" analytics-name="text" data-fh-id="fh-265">AI /
+                LangChain</span>
+              <div class="skill-bar-track" data-name="AI track" analytics-name="div-container" data-fh-id="fh-266">
+                <div class="skill-bar-fill" style="width: 80%" data-name="AI fill" analytics-name="decorative element"
+                  data-fh-id="fh-267"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="AI pct" analytics-name="text" data-fh-id="fh-268">80%</span>
+            </div>
+
+            <div class="skill-bar-row" data-name="Infra bar row" analytics-name="div-container" data-fh-id="fh-269">
+              <span class="skill-bar-label" data-name="Infra label" analytics-name="text" data-fh-id="fh-270">Infra /
+                DevOps</span>
+              <div class="skill-bar-track" data-name="Infra track" analytics-name="div-container" data-fh-id="fh-271">
+                <div class="skill-bar-fill" style="width: 72%" data-name="Infra fill"
+                  analytics-name="decorative element" data-fh-id="fh-272"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="Infra pct" analytics-name="text" data-fh-id="fh-273">72%</span>
+            </div>
+
+            <div class="skill-bar-row" data-name="Embedded bar row" analytics-name="div-container" data-fh-id="fh-274">
+              <span class="skill-bar-label" data-name="Embedded label" analytics-name="text" data-fh-id="fh-275">C/C++ /
+                Embedded</span>
+              <div class="skill-bar-track" data-name="Embedded track" analytics-name="div-container"
+                data-fh-id="fh-276">
+                <div class="skill-bar-fill" style="width: 70%" data-name="Embedded fill"
+                  analytics-name="decorative element" data-fh-id="fh-277"></div>
+              </div>
+              <span class="skill-bar-pct" data-name="Embedded pct" analytics-name="text" data-fh-id="fh-278">70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <style>
+    footer[data-name="Site footer"] {
+      background-color: var(--surface-strong);
+      color: var(--text-on-surface-strong);
+      --link: var(--link-on-strong);
+      --link-hover: var(--link-hover-on-strong);
+      border-top: 1px solid var(--border);
+      padding-block: 3.5rem 2.5rem;
+    }
+
+    footer[data-name="Site footer"] a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
+    footer[data-name="Site footer"] a:hover {
+      color: var(--link-hover);
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--text-on-surface-strong);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand span {
+      color: var(--accent);
+    }
+
+    .footer-tagline {
+      font-size: var(--text-sm);
+      color: var(--fg);
+      line-height: 1.6;
+      max-width: 340px;
+    }
+
+    .footer-links-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-end;
+    }
+
+    .footer-links-title {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-link {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      min-height: 24px;
+      padding: 0.25rem 0;
+      display: inline-block;
+    }
+
+    .footer-divider {
+      height: 1px;
+      background-color: var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-copy {
+      font-size: var(--text-xs);
+      color: var(--fg);
+    }
+
+    .footer-copy span {
+      color: var(--accent);
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .footer-social-link {
+      color: var(--fg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      transition: color var(--duration-fast) ease, border-color var(--duration-fast) ease;
+      text-decoration: none;
+      min-width: 36px;
+      min-height: 36px;
+    }
+
+    .footer-social-link:hover {
+      color: var(--accent);
+      border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+    }
+
+    @media (max-width: 640px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-links-group {
+        align-items: flex-start;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+
+  <footer data-name="Site footer" analytics-name="footer" aria-label="Site footer" data-fh-id="fh-311">
+    <div class="container" data-fh-id="fh-312" data-name="Container" analytics-name="div">
+      <div class="footer-inner" data-name="Footer inner" analytics-name="div-container" data-fh-id="fh-313">
+        <div data-name="Footer brand group" analytics-name="div-container" data-fh-id="fh-314">
+          <div class="footer-brand" data-name="Footer brand" analytics-name="text" data-fh-id="fh-315">Himanshu Jha<span
+              data-fh-id="fh-316" data-name="Text">.</span></div>
+          <p class="footer-tagline" data-name="Footer tagline" analytics-name="text" data-fh-id="fh-317"
+            style="text-transform: none; font-style: normal;">Full-stack engineer. Builds systems that scale, sync, and
+            ship — from multi-tenant AI platforms to real-time collaborative tools.</p>
+        </div>
+        <div class="footer-links-group" data-name="Footer links" analytics-name="div-container" data-fh-id="fh-318">
+          <div class="footer-links-title" data-name="Footer links title" analytics-name="text" data-fh-id="fh-319">Reach
+            Me</div>
+          <a class="footer-link" data-name="Footer email" analytics-name="button" data-fh-id="fh-320"
+            href="mailto:himanshujha5288@gmail.com">himanshujha5288@gmail.com</a>
+          <a class="footer-link" data-name="Footer phone" analytics-name="button" data-fh-id="fh-321"
+            href="tel:+917520109861">+91-7520109861</a>
+          <a target="_blank" rel="noopener noreferrer" class="footer-link" data-name="Footer GitHub"
+            analytics-name="button" data-fh-id="fh-322" href="http://www.github.com/himanshuujha">GitHub</a>
+          <a target="_blank" rel="noopener noreferrer" class="footer-link" data-name="Footer LinkedIn"
+            analytics-name="button" data-fh-id="fh-323"
+            href="http://www.linkedin.com/in/himanshu-jha-34a230249">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-divider" aria-hidden="true" data-fh-id="fh-324" data-name="Footer divider"
+        analytics-name="div"></div>
+      <div class="footer-bottom" data-name="Footer bottom" analytics-name="div-container" data-fh-id="fh-325"
+        data-fh-layout="split">
+        <p class="footer-copy" data-name="Copyright" analytics-name="text" data-fh-id="fh-326"
+          style="text-transform: none; font-style: normal;" data-fh-side="text">
+          © 2026 <span data-fh-id="fh-327" data-name="Text">Himanshu Jha</span>. Gurugram, India.
+        </p>
+        <div class="footer-socials" data-name="Social icons" analytics-name="div-container" data-fh-id="fh-328"
+          data-fh-side="image">
+          <a target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub profile"
+            data-name="GitHub social" analytics-name="button" data-fh-id="fh-329"
+            href="http://www.github.com/himanshuujha">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M6 12c-3 1-3-2-4-2m8 4v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 13 2.77 5.07 5.07 0 0 0 12.91.06S11.86-.27 9 1.6a13.38 13.38 0 0 0-6 0C3.14-.27 2 .06 2 .06A5.07 5.07 0 0 0 1.91 2.77 5.44 5.44 0 0 0 .46 6.65c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 6 16.13V20">
+              </path>
+            </svg>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn profile"
+            data-name="LinkedIn social" analytics-name="button" data-fh-id="fh-330"
+            href="http://www.linkedin.com/in/himanshu-jha-34a230249">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="12" height="12" rx="2"></rect>
+              <path d="M6 10V7m4 3V8.5a1.5 1.5 0 0 0-3 0M5 6h.01"></path>
+            </svg>
+          </a>
+          <a class="footer-social-link" aria-label="Send email" data-name="Email social" analytics-name="button"
+            data-fh-id="fh-331" href="mailto:himanshujha5288@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="14" height="10" rx="2"></rect>
+              <path d="M1 5l7 5 7-5"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Close mobile nav drawer when any link inside it is clicked
+    document.querySelectorAll('.nav-drawer a').forEach(link => {
+      link.addEventListener('click', () => {
+        const mobileNav = document.querySelector('details.nav-mobile');
+        if (mobileNav) {
+          mobileNav.removeAttribute('open');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
